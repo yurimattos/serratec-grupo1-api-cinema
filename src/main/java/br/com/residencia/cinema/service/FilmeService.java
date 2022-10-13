@@ -1,12 +1,12 @@
-package br.com.residencia.service;
+package br.com.residencia.cinema.service;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import br.com.residencia.entity.Filme;
-import br.com.residencia.repository.FilmeRepository;
+import br.com.residencia.cinema.entity.Filme;
+import br.com.residencia.cinema.repository.FilmeRepository;
 
 @Service
 public class FilmeService {
