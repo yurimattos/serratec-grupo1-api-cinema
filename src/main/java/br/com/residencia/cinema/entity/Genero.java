@@ -25,7 +25,7 @@ public class Genero {
 	@Column(name="descricao")
 	private String descricao;
 	
-	//@JsonIgnore
+//	@JsonIgnore
 	@OneToMany(mappedBy = "genero")
 	private Set<Filme> filme;
 

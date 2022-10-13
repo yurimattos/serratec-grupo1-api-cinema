@@ -40,7 +40,13 @@ public class DiretorController {
 	
 	@PutMapping("/{id}")
 	public ResponseEntity<Diretor> updateDiretor(@RequestBody Diretor diretor, @PathVariable Integer id){
-		return new ResponseEntity<>(diretorService.updateDiretor(diretor, id), HttpStatus.OK);
+		diretor = diretorService.getDiretorById(id);
+		
+		if(diretor != null) {
+			return new ResponseEntity<>(diretorService.updateDiretor(diretor, id), HttpStatus.OK);
+		} else {
+			return null;
+		}
 	}
 	
 	@DeleteMapping("/{id}")

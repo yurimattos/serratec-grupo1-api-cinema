@@ -25,7 +25,7 @@ public class Diretor {
 	@Column(name="nome")
 	private String nome;
 	
-	//@JsonIgnore
+//	@JsonIgnore
 	@OneToMany(mappedBy = "diretor")
 	private Set<Filme> filme;
 

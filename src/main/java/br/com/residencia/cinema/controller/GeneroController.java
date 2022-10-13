@@ -40,7 +40,13 @@ public class GeneroController {
 	
 	@PutMapping("/{id}")
 	public ResponseEntity<Genero> updateGenero(@RequestBody Genero genero, @PathVariable Integer id){
-		return new ResponseEntity<>(generoService.updateGenero(genero, id), HttpStatus.OK);
+		genero = generoService.getGeneroById(id);
+		
+		if(genero != null) {
+			return new ResponseEntity<>(generoService.updateGenero(genero, id), HttpStatus.OK);
+		} else {
+			return null;
+		}
 	}
 	
 	@DeleteMapping("/{id}")
