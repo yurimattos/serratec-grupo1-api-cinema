@@ -1,4 +1,4 @@
-package br.com.residencia.cinema.entity;
+package br.com.residencia.entity;
 
 
 import javax.persistence.Column;

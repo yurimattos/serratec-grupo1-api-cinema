@@ -1,4 +1,4 @@
-package br.com.residencia.cinema.controller;
+package br.com.residencia.controller;
 
 import java.util.List;
 
@@ -14,8 +14,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import br.com.residencia.cinema.entity.Genero;
-import br.com.residencia.cinema.service.GeneroService;
+import br.com.residencia.entity.Genero;
+import br.com.residencia.service.GeneroService;
 
 @RestController
 @RequestMapping("/generos")
